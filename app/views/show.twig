@@ -1,0 +1,13 @@
+{% extends 'base.twig' %}
+{% block content %}
+<div class="wrapper">
+    <li class="feature-item">
+        <a class="name" href="{{ path('feature_edit', {'name': name}) }}">{{ name }}</a>
+        <p class="anonymous anonymous-{{ feature.anonymous }}">{{ feature.anonymous == 'true' ? 'On' : 'Off' }}</p>
+        <p class="percent">{{ feature.percent }}</p>
+        <form class="delete" action="{{ path('feature_destroy', {'name': name}) }}" method="POST" accept-charset="utf-8">
+            <input class="submit" type="submit" value="删除">
+        </form>
+    </li>
+</div>
+{% endblock content %}

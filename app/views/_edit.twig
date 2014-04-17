@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <div class="form">
+        <form id="feature-form" action="/feature" method="POST" accept-charset="utf-8">
+            功能名称: <input class="text name" type="text" name="name" value="{{ feature is defined ? feature.name : '' }}">
+            用户百分比: <input class="text percent" type="text" name="percent" value="{{ feature is defined ? feature.percent: 0 }}">
+            匿名用户: <input class="text anonymous" type="text" name="anonymous" value="{{ feature is defined and feature.anonymous ? 'true': 'false' }}">
+            用户白名单: <textarea class="whitelist" name="whitelist" value="">{{ feature is defined ? feature.whitelist|join(','): '' }}</textarea>
+            <input class="submit" type="submit" value="{{ feature is defined ? '修改功能' : '添加功能'}}">
+        </form>
+    </div>
+</div>

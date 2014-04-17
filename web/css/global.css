@@ -1,0 +1,168 @@
+html, body, header, menu, a, textarea, form, input {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    line-height: 180%;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+a {
+    text-shadow: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
+    background: #f0f0f0;
+}
+
+header {
+    background: #000;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+menu {
+    clear: both;
+    display: table;
+    background: #000;
+}
+
+menu a {
+    line-height: 40px;
+    padding: 0px 20px;
+    color: #fff;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+menu a:focus, menu a:hover {
+    background: #777;
+}
+
+li {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    float: left;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 12px;
+}
+
+textarea {
+    resize: none;
+    outline: 0px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: 550px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.content {
+    position: relative;
+    margin: 0px auto;
+    width: 980px;
+}
+
+.wrapper {
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.form {
+    padding: 10px 10px;
+}
+
+#feature-form {
+    padding-left: 58px;
+}
+
+.submit {
+    padding: 4px 10px 4px 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.feature-list {
+    display: block;
+    width: 100%;
+}
+
+.feature-item {
+    display: table;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 30px;
+    min-height: 48px;
+}
+
+.feature-item > .name {
+    display: table-cell;
+    vertical-align: middle;
+    width: 20%;
+    text-align: left;
+    color: #777;
+    padding: 0px 0px 0px 50px;
+    font-size: 22px;
+}
+
+.feature-item > .name:focus, .feature-item > .name:hover {
+    color: #333;
+}
+
+.feature-item > .anonymous {
+    vertical-align: middle;
+    display: table-cell;
+    width: 30%;
+}
+
+.feature-item > .percent {
+    vertical-align: middle;
+    display: table-cell;
+    width: 30%;
+}
+
+.feature-item > .delete {
+    vertical-align: middle;
+    display: table-cell;
+    width: 10%;
+}
+
+.feature-item > .edit {
+    vertical-align: middle;
+    display: table-cell;
+    width: 10%;
+}
+
+.text {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: 550px;
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
