@@ -1,5 +1,5 @@
 {
-    "name": "feature-gui/feature-gui",
+    "name": "eleme/feature-gui",
     "require": {
         "silex/silex": "1.1.2",
         "symfony/twig-bridge": "2.4.2",
